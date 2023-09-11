@@ -1,0 +1,87 @@
+/* 首页CSS样式 */
+
+/* 版心居中 */
+.wrapper {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+/* 头部 */
+.header {
+    height: 100px;
+    background-color: #fff;
+}
+.header .wrapper {
+    display: flex;
+    padding-top: 30px;
+}
+
+/* logo */
+.header .wrapper .logo a {
+    display: block;
+    width: 195px;
+    height: 41px;
+    background-image: url(../images/);
+    background-color: pink;
+    font-size: 0;
+    /* 0隐藏文字 */
+}
+
+/* 导航 */
+.nav {
+    margin-left: 102px;
+}
+.nav ul {
+    display: flex;
+}
+.nav li {
+    margin-right: 24px;
+}
+.nav li a {
+    display: block;
+    padding: 6px 8px;
+    line-height: 27px;
+    font-size: 19px;
+}
+
+.nav li .active,
+.nav li a:hover {
+    border-bottom: 2px solid #6765ff;
+}
+
+/* 搜索 */
+.search {
+    display: flex;
+    width: 412px;
+    height: 40px;
+    background-color: #f3f5f7;
+    margin-left: 64px;
+    font-size: 0;
+    padding-left: 19px;
+    padding-right: 12px;
+    border-radius: 20px;
+}
+.search input {
+    flex: 1;
+    border: 0;
+    background-color: transparent;
+    outline: none;
+    /* 去掉表单控件的焦点框 */
+}
+
+/* 选中的就是placeholder属性文字样式 */
+.search input::placeholder {
+    font-size: 14px;
+    color: #999;
+}
+
+.search a {
+    width: 15px;
+    height: 16px;
+    background-image: url();
+    align-self: center;
+}

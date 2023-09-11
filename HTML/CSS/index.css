@@ -25,8 +25,7 @@ body {
     display: block;
     width: 195px;
     height: 41px;
-    background-image: url(../images/);
-    background-color: pink;
+    background-image: url(../images/logo.png);
     font-size: 0;
     /* 0隐藏文字 */
 }
@@ -82,6 +81,110 @@ body {
 .search a {
     width: 15px;
     height: 16px;
-    background-image: url();
+    background-image: url(../images/search.png);
     align-self: center;
+}
+
+/* 用户 */
+.user {
+    margin-left: 32px;
+    margin-top: 4px;
+}
+
+.user img {
+    /* 行内块和行内垂直对齐 */
+    vertical-align: middle;
+    margin-right: 7px;
+    background-color: pink;
+}
+
+.user span {
+    font-size: 16px;
+    color: #666;
+}
+
+/* banner区域 */
+.banner {
+    background-color: #0092cb;
+    height: 420px;
+}
+
+.banner .wrapper {
+    display: flex;
+    justify-content: space-between;
+    height: 420px;
+    background-image: url(../uploads/banner.png);
+}
+
+/* 侧导航 */
+.banner .left {
+    padding: 3px 20px;
+    width: 200px;
+    height: 420px;
+    background-color: rgba(0,0,0,0.42);
+}
+
+.banner .left a {
+    display: block;
+    height: 46px;
+    background: url(../images/right.png) no-repeat right center;
+    line-height: 46px;
+    font-size: 16px;
+    color: #fff;
+}
+
+.banner .left a:hover {
+    background-image: url(../images/right-hover.png);
+    color: #00a4ff;
+}
+
+/* 课程表right */
+.banner .right {
+    margin-top: 60px;
+    width: 205px;
+    height: 218px;
+    background-color: #209dd5;
+    border-radius: 10px;
+}
+
+.banner .right h3 {
+    margin-left: 14px;
+    height: 48px;
+    line-height: 48px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.banner .right .content {
+    height: 257px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 14px;
+}
+
+.banner .right dl {
+    margin-bottom: 12px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.banner .right dt {
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 20px;
+    font-weight: 700;
+}
+
+.banner .right dd {
+    margin-bottom: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.banner .right dd span {
+    color: #00a4ff;
+}
+
+.banner .right dd strong {
+    color: #7e7e7e;
 }

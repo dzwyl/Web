@@ -1,0 +1,53 @@
+<!-- 双开门案例 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        /* 1.布局：父子结构，父级大图，子级左右小图 */
+        .father {
+            margin: 0 auto;
+            width: 1366px;
+            height: 600px;
+            background-image: url();
+            background-color: pink;
+            display: flex;
+            overflow: hidden;
+        }
+
+        .father .left,
+        .father .right {
+            width: 683px;
+            height: 600px;
+            background-color: rgb(120, 148, 120);
+            transition: all .5s;
+        }
+
+        .father .right {
+            background-color: skyblue;
+        }
+
+        .father:hover .left {
+            transform: translateX(-100%);
+        }
+
+        .father:hover .right {
+            background-image: trans;
+            transform: translateX(100%);
+        }
+        /* 鼠标悬停效果：左右移动 */
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="left"></div>
+        <div class="right"></div>
+    </div>
+</body>
+</html>

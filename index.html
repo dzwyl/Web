@@ -29,5 +29,57 @@
         <img src="./2022_07_31_20_15_IMG_1742.JPG" alt="">
     </div>
 </body>
+<script>
+	window.alert("JS");             //浏览器弹出警告框
+    document.write("Hello JS");     //写入html页面中
+    console.log("hello js")         //控制台输出
+
+    let b = 2;                      //定义局部变量，不可重复定义
+    const c = 3;                    //定义常量
+
+    alert(typeof a)                 //获取数据类型
+    alert(typeof null)              //object
+    alert(parseInt("12"))           //转换为整型数据12
+    alert(parseInt("12A45"))        //12
+    alert(parseInt("A12"))          //NAN
+
+    function add(a,b){
+        return a+b;                 //定义函数-1
+    }
+
+    var add = function(a,b){
+        return a+b;                 //定义函数-2
+    }
+    var result = add(1,2);          //调用函数
+
+    var arr = new Array(1,2,3,4,5);
+    var arr = [1,2,3,4];            //创建数组
+    console.log(arr[2]);
+    arr[9] = "a";
+    arr[8] = true;
+
+    for (let i = 0; i < arr.length; i++) {
+        console.log(arr[i]);        
+    }
+
+    arr.forEach(function(e){
+        console.log(e);              //遍历数组中有值的元素
+    })
+
+    arr.forEach((e) => {
+        console.log(e);
+    })                              //方法二  箭头函数
+    arr.push(7,8,9);                //添加元素到数组尾部
+    arr.splice(2,2);                //删除元素
+
+    var str = new String("hello");  //定义字符串
+    var str = " hello aa ";
+    console.log(str);
+    console.log(arr.length);
+    console.log(str.charAt(2));     //返回指定位置字符
+    console.log(str.indexOf("lo")); //返回索引值
+    console.log(str.trim());        //去除首尾空格
+    console.log(str.substring(3,5));
+</script>
 </html>
 
